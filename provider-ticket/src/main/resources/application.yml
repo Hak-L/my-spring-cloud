@@ -1,0 +1,15 @@
+#应用名字，eureka注册中心页面显示服务名就以这个为准
+spring:
+  application:
+    name: provider-ticket
+server:
+  port: 8002
+#设置注册到注册中心的地址
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+
